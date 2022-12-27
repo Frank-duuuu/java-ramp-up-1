@@ -5,14 +5,14 @@
  * specification.
  */
 
-package eecs285.p1.jinyangd.<uniqname>; // replace with your uniqname
+package eecs285.p1.jinyangd; // replace with your uniqname
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 
 public class TweetSentimentMain {
   /** Uniqname used for package and file paths. */
-  public static final String UNIQNAME = "<uniqname>";
+  public static final String UNIQNAME = "jinyangd";
   // Replace the string above with your uniqname.
 
   /** Sentiments filename. */

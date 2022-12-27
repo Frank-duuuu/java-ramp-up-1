@@ -6,7 +6,7 @@
  * sentiment.
  */
 
-package eecs285.p1.jinyangd.<uniqname>; // replace with your uniqname
+package eecs285.p1.jinyangd; // replace with your uniqname
 
 import java.io.BufferedReader;
 import java.io.FileReader;

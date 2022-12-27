@@ -2,7 +2,7 @@
  * EECS 285 Project 1 -- Basic tests for Tweet and Location classes.
  */
 
-package eecs285.p1.jinyangd.<uniqname>; // replace with your uniqname
+package eecs285.p1.jinyangd; // replace with your uniqname
 
 import java.util.ArrayList;
 

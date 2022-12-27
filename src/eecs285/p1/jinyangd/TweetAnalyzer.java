@@ -8,7 +8,7 @@
  * See https://eecs285.github.io/p1-sentiments/ for the specification.
  */
 
-package eecs285.p1.jinyangd.<uniqname>; // replace with your uniqname
+package eecs285.p1.jinyangd; // replace with your uniqname
 
 import java.util.ArrayList;
 
