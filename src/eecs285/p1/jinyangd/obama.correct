@@ -1,0 +1,6 @@
+Tweet file: obama.txt
+Location boundary: [37.0, -104.05] to [49.0, -80.517]
+Sentiment within boundary: 
+  Average sentiment over 129 tweets: 0.0391
+Sentiment outside boundary: 
+  Average sentiment over 627 tweets: 0.0088

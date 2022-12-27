@@ -1,0 +1,6 @@
+Tweet file: soup.txt
+Location boundary: [37.0, -104.05] to [49.0, -80.517]
+Sentiment within boundary: 
+  Average sentiment over 74 tweets: 0.0033
+Sentiment outside boundary: 
+  Average sentiment over 255 tweets: 0.1264

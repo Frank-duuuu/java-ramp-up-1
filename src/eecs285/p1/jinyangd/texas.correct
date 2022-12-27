@@ -1,0 +1,6 @@
+Tweet file: texas.txt
+Location boundary: [37.0, -104.05] to [49.0, -80.517]
+Sentiment within boundary: 
+  Average sentiment over 90 tweets: 0.0088
+Sentiment outside boundary: 
+  Average sentiment over 2069 tweets: 0.0312

@@ -1,0 +1,31 @@
+[42.28, -83.75]
+  Latitude: 42.28
+  Longitude: -83.75
+  In Midwest? true
+[37.87, -122.27]
+  Latitude: 37.87
+  Longitude: -122.27
+  In Midwest? false
+[42.28, -83.75] i love my job. #winning
+  Text: i love my job. #winning
+  Location: [42.28, -83.75]
+  Words:
+    i
+    love
+    my
+    job
+    winning
+[37.87, -122.27] i hate my job
+  Text: i hate my job
+  Location: [37.87, -122.27]
+  Words:
+    i
+    hate
+    my
+    job
+[42.28, -83.75] michigan wolverines
+  Text: michigan wolverines
+  Location: [42.28, -83.75]
+  Words:
+    michigan
+    wolverines
