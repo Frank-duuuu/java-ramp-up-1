@@ -33,7 +33,7 @@ public class TweetSentimentMain {
 
   /** Path to data folder. */
   public static final String DATA_PATH =
-    "eecs285/proj1/" + UNIQNAME + "/data";
+    "eecs285/p1/" + UNIQNAME + "/data";
 
   /**
    * Analyzes sentiment of tweets within and outside of Midwest

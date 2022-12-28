@@ -10,6 +10,7 @@
 
 package eecs285.p1.jinyangd; // replace with your uniqname
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class TweetAnalyzer {
@@ -37,7 +38,17 @@ public class TweetAnalyzer {
    * @return  the overall sentiment of the tweet
    */
   public Double computeSentiment(Tweet tweet) {
-    return null; // replace with your solution
+    ArrayList<String> wordlist = tweet.getWords();
+    double sum = 0;
+    int count = 0;
+    for (String word : wordlist) {
+      if (sentiments.getSentiment(word) != 0) {
+        sum += sentiments.getSentiment(word);
+        count++;
+      }
+    }
+    if (count == 0) return null;
+    return sum / count;
   }
 
   /**
@@ -52,7 +63,25 @@ public class TweetAnalyzer {
    */
   public void averageSentimentWithin(Location lowerBound,
                                      Location upperBound) {
-    // your code here
+    double sum = 0;
+    int count = 0;
+    boolean valid = false;
+    for (int i = 0; i < tweets.size(); i++) {
+      Tweet tweet = tweets.get(i);
+      if (tweet.getLocation().isWithin(lowerBound, upperBound)) {
+        Double senti = computeSentiment(tweet);
+        if (senti != null) {
+          sum += senti;
+          count++;
+        }
+      }
+    }
+    if (count == 0) {
+      System.out.println("  No tweets with sentiment");
+      return;
+    }
+    System.out.printf("  Average sentiment over %d tweets: %s%n",
+        count, roundedString(sum / count));
   }
 
   /**
@@ -67,7 +96,24 @@ public class TweetAnalyzer {
    */
   public void averageSentimentOutside(Location lowerBound,
                                       Location upperBound) {
-    // your code here
+    double sum = 0;
+    int count = 0;
+    for (int i = 0; i < tweets.size(); i++) {
+      Tweet tweet = tweets.get(i);
+      if (!tweet.getLocation().isWithin(lowerBound, upperBound)) {
+        Double senti = computeSentiment(tweet);
+        if (senti != null) {
+          sum += senti;
+          count++;
+        }
+      }
+    }
+    if (count == 0) {
+      System.out.println("  No tweets with sentiment");
+      return;
+    }
+    System.out.printf("  Average sentiment over %d tweets: %s%n",
+        count, roundedString(sum / count));
   }
 
   /**

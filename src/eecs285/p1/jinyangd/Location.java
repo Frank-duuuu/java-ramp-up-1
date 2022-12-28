@@ -1,24 +1,32 @@
 package eecs285.p1.jinyangd;
 
 public class Location {
-  public Location(double lat, double lon) {
+  private final double lat;
+  private final double lon;
 
+  public Location(double lat, double lon) {
+    this.lat = lat;
+    this.lon = lon;
   }
 
   public double getLatitude() {
-    return 0.0;
+    return lat;
   }
 
   public double getLongitude() {
-    return 0.0;
+    return lon;
   }
 
   @Override
   public String toString() {
-    return "";
+    return String.format("[%s, %s]", lat, lon);
   }
 
   public boolean isWithin(Location lowerBound, Location upperBound) {
-    return true;
+    if (lat >= lowerBound.getLatitude() && lat <= upperBound.getLatitude() &&
+        lon >= lowerBound.getLongitude() && lon <= upperBound.getLongitude()) {
+      return true;
+    }
+    return false;
   }
 }
